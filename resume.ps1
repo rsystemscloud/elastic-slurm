@@ -31,8 +31,6 @@ $res = Connect-vRAServer -Server $vraserver -APItoken $token
 
 # This is unix timestamp in seconds, to use in the name of the deployment
 $timestamp = Get-Date -UFormat %s
-
-# Account here can be hard coded, since it's always AWS Truepower
 $name = "SLURM Created $timestamp-$account"
 
 # Build the request
